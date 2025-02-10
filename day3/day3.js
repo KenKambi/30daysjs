@@ -10,8 +10,11 @@ let age = document.querySelector('.age');
 
 let greeting = document.querySelector('.greeting');
 
-greeting.addEventListener('click', () => {
-   //get the input value to display on the alert box
+//greeting.addEventListener('click', () => {   
+//});
+
+function sendGreeting (){
+    //get the input value to display on the alert box
     let theFirstName = firstName.value;
     let theSecondName = secondName.value;
     let theAge = isNaN(age.value);
@@ -22,4 +25,5 @@ greeting.addEventListener('click', () => {
         alert("Hello " + theFirstName +" "+ theSecondName +" "+ age.value );
     }
     console.log("sent");
-})
+
+};
