@@ -22,8 +22,20 @@ function sendGreeting (){
     if(theAge){
         alert("Please enter a valid number!");
     } else{
-        alert("Hello " + theFirstName +" "+ theSecondName +" "+ age.value );
+        alert("Hello " + theFirstName +" "+ theSecondName +" "+ age.value);
     }
     console.log("sent");
 
 };
+
+
+let today = new Date().getFullYear();
+console.log(today);
+
+let copyright = '';
+copyright += `
+    <p>
+        <span> &copy ${today} </span>
+    </p>
+`
+document.querySelector('.copyright').innerHTML = copyright
