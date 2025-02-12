@@ -3,9 +3,10 @@
 }
 
 .body-whole{
-    background-color: brown;
+    background-color: black;
+    color: whitesmoke;
 
 }
 .dark-mode{
-    background-color: blue;
+    background-color: gray;
 }

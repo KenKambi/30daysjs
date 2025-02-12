@@ -49,10 +49,10 @@ document.querySelector('.copyright').innerHTML = copyright
 //edit any element in an existing webpage
 //document.designMode = 'on'
 
-
+//Toggle between Light and Dark mode
 let wholeBody = document.querySelector('.body');
-let toggle = document.querySelector('.dark-mode');
+let toggleBtn = document.querySelector('.dark-mode');
 
-toggle.addEventListener('click', () =>{
+toggleBtn.addEventListener('click', () =>{
     console.log(wholeBody.classList.toggle("body-whole"));
 })
