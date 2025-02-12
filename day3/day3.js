@@ -29,13 +29,16 @@ function sendGreeting (){
 };
 
 
-let today = new Date().getFullYear();
-console.log(today);
+let year = new Date().getFullYear();
+console.log(year);
 
 let copyright = '';
 copyright += `
     <p>
-        <span> &copy ${today} </span>
+        <span> &copy ${year} </span>
     </p>
 `
 document.querySelector('.copyright').innerHTML = copyright
+
+//edit any element in an existing webpage
+//document.designMode = 'on'
