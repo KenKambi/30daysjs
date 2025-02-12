@@ -19,15 +19,21 @@ function sendGreeting (){
     let theSecondName = secondName.value;
     let theAge = isNaN(age.value);
 
-    if(theAge){
-        alert("Please enter a valid number!");
-    } else{
-        alert("Hello " + theFirstName +" "+ theSecondName +" "+ age.value);
+    if (theFirstName && theSecondName){
+        if(theAge){
+            alert("Please enter a valid number!");
+        } else{
+            alert("Hello " + theFirstName +" "+ theSecondName +" "+ age.value);
+        };
+    }else{
+     alert("Kindly fill all the fields")
     }
     console.log("sent");
-
 };
 
+
+
+//console.log(theFirstName);
 
 let year = new Date().getFullYear();
 console.log(year);
