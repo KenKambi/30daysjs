@@ -45,8 +45,8 @@ copyright += `
     <p>
         <span> &copy ${year} </span>
     </p>
-`
-document.querySelector('.copyright').innerHTML = copyright
+    `;
+document.querySelector('.copyright').innerHTML = copyright;
 
 //edit any element in an existing webpage
 //document.designMode = 'on'
@@ -56,5 +56,17 @@ let wholeBody = document.querySelector('.body');
 let toggleBtn = document.querySelector('.dark-mode');
 
 toggleBtn.addEventListener('click', () => {
-    console.log(wholeBody.classList.toggle("body-whole"));
+    let btnChange = wholeBody.classList.toggle("body-whole");
+    
+    /*
+    if (btnChange) {
+        toggleBtn.innerHTML = 'Light Mode';
+    }else{
+        toggleBtn.innerHTML = 'Dark Mode';
+    }
+    */
+
+    //shorter if-else statent
+    toggleBtn.innerHTML = btnChange ? 'Light Mode':'Dark Mode';
+    
 });
