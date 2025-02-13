@@ -9,6 +9,7 @@ let secondName = document.querySelector('.second-name');
 let age = document.querySelector('.age');
 
 let greeting = document.querySelector('.greeting');
+let text = document.querySelector('.text');
 
 //greeting.addEventListener('click', () => {   
 //});
@@ -21,12 +22,13 @@ function sendGreeting (){
 
     if (theFirstName && theSecondName){
         if(theAge){
-            alert("Please enter a valid number!");
+            //alert("Please enter a valid number!");
+            text.innerHTML = "Please enter a valid number at Age";
         } else{
-            alert("Hello " + theFirstName +" "+ theSecondName +" "+ age.value);
+            text.innerHTML = "Hello " + theFirstName +" "+ theSecondName +" "+ age.value;
         };
     }else{
-     alert("Kindly fill all the fields")
+     text.innerHTML = "Kindly fill all the fields"
     }
     console.log("sent");
 };
@@ -53,6 +55,6 @@ document.querySelector('.copyright').innerHTML = copyright
 let wholeBody = document.querySelector('.body');
 let toggleBtn = document.querySelector('.dark-mode');
 
-toggleBtn.addEventListener('click', () =>{
+toggleBtn.addEventListener('click', () => {
     console.log(wholeBody.classList.toggle("body-whole"));
-})
+});
