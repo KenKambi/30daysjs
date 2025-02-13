@@ -2,9 +2,14 @@
     background-color: aqua;
 }
 
+.greeting, .dark-mode{
+    cursor: pointer;
+}
+
 .body-whole{
     background-color: black;
     color: whitesmoke;
+
 
 }
 .dark-mode{

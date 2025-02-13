@@ -70,3 +70,10 @@ toggleBtn.addEventListener('click', () => {
     toggleBtn.innerHTML = btnChange ? 'Light Mode':'Dark Mode';
     
 });
+
+/*let classes = new Class('hello');
+text.toHTML()
+function Class (){
+
+}
+*/
