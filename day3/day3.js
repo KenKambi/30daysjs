@@ -58,16 +58,16 @@ let toggleBtn = document.querySelector('.dark-mode');
 toggleBtn.addEventListener('click', () => {
     let btnChange = wholeBody.classList.toggle("body-whole");
     
-    /*
+    
     if (btnChange) {
         toggleBtn.innerHTML = 'Light Mode';
     }else{
         toggleBtn.innerHTML = 'Dark Mode';
     }
-    */
+    
 
     //shorter if-else statent
-    toggleBtn.innerHTML = btnChange ? 'Light Mode':'Dark Mode';
+    //toggleBtn.innerHTML = btnChange ? 'Light Mode':'Dark Mode';
     
 });
 
