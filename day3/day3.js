@@ -71,7 +71,8 @@ toggleBtn.addEventListener('click', () => {
     
 });
 
-/*let classes = new Class('hello');
+/*
+let classes = new Class('hello');
 text.toHTML()
 function Class (){
 
