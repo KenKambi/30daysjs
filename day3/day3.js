@@ -58,7 +58,7 @@ let toggleBtn = document.querySelector('.dark-mode');
 toggleBtn.addEventListener('click', () => {
     let btnChange = wholeBody.classList.toggle("body-whole");
     
-    
+    //Longer version of if else 
     if (btnChange) {
         toggleBtn.innerHTML = 'Light Mode';
     }else{
