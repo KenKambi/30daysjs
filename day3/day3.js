@@ -78,3 +78,39 @@ function Class (){
 
 }
 */
+//let request = new AjaxRequest();
+//request.send("GET", "https://chatgpt.com", sendGreeting());
+//console.log(request.getStatus());
+
+//var x = 5;
+//var y = 8;
+//console.log(x + y)
+
+let object = {
+    name: "Ken",
+    age: 20,
+    fast: 80,
+    drive: function (time){
+        console.log("the speed is " + time);
+        console.log(this.age)
+    },
+    corner:{
+
+    }
+ 
+    
+}
+object.drive(30);
+//console.log(object.name);
+
+let Car =  function(driver, speed){
+    this.driver = driver;
+    this.speed = speed;
+    this.drive = function(){
+        console.log("the speed is " + speed);
+    };
+
+} 
+let newCar = new Car("Jane", 30);
+
+
