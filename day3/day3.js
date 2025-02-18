@@ -114,3 +114,30 @@ let Car =  function(driver, speed){
 let newCar = new Car("Jane", 30);
 
 
+let bus = {
+    tires: 20,
+    passengers: "hello",
+    distance: function(){
+        console.log("Hello there" + this.passengers);
+    },
+    seats:{
+        right: 12,
+        left: 12
+    }
+}
+
+bus.distance();
+console.log(bus.seats);
+
+
+let Bus = function (nWheels,nSeats){
+    this.wheels = nWheels;
+    this.seats = nSeats;
+    this.speed = function(n,s){
+        console.log("Heheheh " + this.wheels);
+    }
+};
+
+//console.log(speed)
+let bus1 = new Bus( 20, 10);
+bus1.speed(20,20)
