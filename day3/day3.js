@@ -141,3 +141,6 @@ let Bus = function (nWheels,nSeats){
 //console.log(speed)
 let bus1 = new Bus( 20, 10);
 bus1.speed(20,20)
+
+let  birthday = new Date(1998, 9, 23);
+console.log(birthday.getDay())// (5)Friday
