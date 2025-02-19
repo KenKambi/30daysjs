@@ -8,12 +8,13 @@ addEventListener('click', ()=> {
 })
 */
 
-//let inputText = document.querySelectorAll('.input');
-//console.log(inputText.value);
 let inputText =  document.querySelector(".input");
 let value7 = document.querySelector(".num7");
 let value8 = document.querySelector(".num8");
 let valueC = document.querySelector(".numC");
+let valuePlus = document.querySelector(".numPlus");
+let valueSum = document.querySelector(".numSum");
+
 
 
 
@@ -27,6 +28,14 @@ value8.addEventListener('click', ()=>{
 valueC.addEventListener('click', ()=>{
     console.log(inputText.value ='');
   });
+valuePlus.addEventListener('click', ()=>{
+    console.log(inputText.value += valuePlus.innerHTML);
+  });
+valueSum.addEventListener('click', ()=>{
+    //console.log(inputText.value += valuePlus.innerHTML);
+    let sums = eval(inputText.value)
+    inputText.value = sums;
+    console.log (sums);
+  });
 
-//console.log(valueOnBtn.innerHTML);
-//console.log(inputText.value = valueOnBtn.innerHTML)
+
