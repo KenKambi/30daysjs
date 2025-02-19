@@ -84,7 +84,7 @@ function Class (){
 
 //var x = 5;
 //var y = 8;
-//console.log(x + y)
+//console.log(x + y);
 
 let object = {
     name: "Ken",
