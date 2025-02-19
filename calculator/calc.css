@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.calc{
+   width:
+}
+
+.btn{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
