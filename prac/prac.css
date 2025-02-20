@@ -1,0 +1,37 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    height: 100vh;
+}
+
+main{
+    background-color: rgba(0, 0, 0, 0.952);
+    border-radius: 20px;
+}
+
+.txt{
+    width: 240px;
+    height: 60px;
+    text-align: right;
+}
+
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    color: antiquewhite;
+    background-color: black;
+}
+
+.special{
+    background-color: orange;
+}
