@@ -12,6 +12,7 @@ addEventListener('click', ()=> {
 //Use get attribute function
 //Use querySelectorALll and forEach 
 //Use eval() method
+
 let inputText =  document.querySelector(".input");
 let value7 = document.querySelector(".num7");
 let value8 = document.querySelector(".num8");
